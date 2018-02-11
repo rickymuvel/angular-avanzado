@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 // Mis módulos
 import { PagesModule } from './pages/pages.module';
-import { SharedModule } from './shared/shared.module';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -22,8 +21,7 @@ import { RegisterComponent } from './login/register.component';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule,
-    SharedModule
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
