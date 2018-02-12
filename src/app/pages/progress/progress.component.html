@@ -3,9 +3,15 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Barra de progreso</h4>
+
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValuenow]="progreso" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso + '%'"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValueNow]="progreso" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso + '%'"></div>
                 </div>
+                <br />
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.ariaValueNow]="progreso" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso + '%'"></div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -15,19 +21,9 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <div class="input-group">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button">
-                            <i class="mdi mdi-plus"></i>
-                        </button>
-                    </div>
-                    <input type="text" class="form-control">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button">
-                            <i class="mdi mdi-minus"></i>
-                        </button>
-                    </div>
-                </div>
+
+                <app-incrementador></app-incrementador>
+
             </div>
         </div>
     </div>
@@ -35,7 +31,7 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                Texto 2
+                <app-incrementador></app-incrementador>
             </div>
         </div>
     </div>

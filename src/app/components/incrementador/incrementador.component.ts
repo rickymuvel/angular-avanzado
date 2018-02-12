@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-progress',
-  templateUrl: './progress.component.html',
+  selector: 'app-incrementador',
+  templateUrl: './incrementador.component.html',
   styles: []
 })
-export class ProgressComponent implements OnInit {
+export class IncrementadorComponent implements OnInit {
 
+  leyenda: string = 'Leyenda';
   progreso: number = 50;
   constructor() { }
 
