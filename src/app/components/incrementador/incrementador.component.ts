@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Input, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-incrementador',
@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IncrementadorComponent implements OnInit {
 
-  leyenda: string = 'Leyenda';
-  progreso: number = 50;
-  constructor() { }
+  @Input() leyenda: string = 'Leyenda';
+  @Input('nombre_progreso') progreso: number = 50;
+
+  // Ojo que hemos puesto un parámetro al input como un "alias" que será usado en el componente que use este otro componente. Para este caso
+  // El componente progress.component.html
+
+  constructor() {
+    console.log( 'Leyenda', this.leyenda );
+    console.log( 'progreso', this.progreso );
+  }
 
   ngOnInit() {
+    console.log( 'Leyenda', this.leyenda );
+    console.log( 'progreso', this.progreso );
   }
 
   cambiarValor( valor: number ) {

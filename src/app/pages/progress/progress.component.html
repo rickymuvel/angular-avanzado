@@ -22,7 +22,7 @@
         <div class="card">
             <div class="card-body">
 
-                <app-incrementador></app-incrementador>
+                <app-incrementador leyenda="Progress Azul" [nombre_progreso]="20"></app-incrementador>
 
             </div>
         </div>
@@ -31,8 +31,13 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incrementador></app-incrementador>
+                <app-incrementador leyenda="Progress Verde" [nombre_progreso]="30"></app-incrementador>
             </div>
         </div>
     </div>
 </div>
+
+<!-- 
+    Es importante mencionar que cuando queremos que Angular interprete un número como entero (usando los @Input) es necesario poner la variable entre corchetes
+    como es el caso de "progreso" que se puso [progreso]="20". Si no se hace eso, entonces se tomará como un string. 
+-->
