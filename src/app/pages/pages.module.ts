@@ -20,6 +20,7 @@ import { PagesComponent } from './pages.component';
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { ChartComponentComponent } from '../components/chart-component/chart-component.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule ({
     declarations: [
@@ -28,7 +29,8 @@ import { ChartComponentComponent } from '../components/chart-component/chart-com
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        ChartComponentComponent
+        ChartComponentComponent,
+        AccountSettingsComponent
     ],
     exports: [
         PagesComponent,
