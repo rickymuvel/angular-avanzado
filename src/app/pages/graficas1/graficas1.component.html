@@ -1,3 +1,27 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+    <div class="col-6">
+        <h4>{{ graficos.grafico1.leyenda }}</h4>
+        <app-chart-component [labelsGrafico]="graficos.grafico1.labels" [datosGrafico]="graficos.grafico1.data" [tipoGrafico]="graficos.grafico1.type"></app-chart-component>
+
+    </div>
+
+    <div class="col-6">
+        <h4>{{ graficos.grafico2.leyenda }}</h4>
+        <app-chart-component [labelsGrafico]="graficos.grafico2.labels" [datosGrafico]="graficos.grafico2.data" [tipoGrafico]="graficos.grafico2.type"></app-chart-component>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <h4>{{ graficos.grafico3.leyenda }}</h4>
+        <app-chart-component [labelsGrafico]="graficos.grafico3.labels" [datosGrafico]="graficos.grafico3.data" [tipoGrafico]="graficos.grafico3.type"></app-chart-component>
+
+    </div>
+
+    <div class="col-6">
+        <h4>{{ graficos.grafico4.leyenda }}</h4>
+        <app-chart-component [labelsGrafico]="graficos.grafico4.labels" [datosGrafico]="graficos.grafico4.data" [tipoGrafico]="graficos.grafico4.type"></app-chart-component>
+
+    </div>
+</div>
