@@ -15,8 +15,6 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 
-
-
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { ChartComponentComponent } from '../components/chart-component/chart-component.component';
