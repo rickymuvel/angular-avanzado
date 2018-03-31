@@ -4,12 +4,12 @@ import { DOCUMENT } from '@angular/platform-browser';
 @Injectable()
 export class SettingsService {
 
-  ajustes: IAjustes = {
+  ajustes: Ajustes = {
     temaUrl: 'assets/css/colors/default.css',
     tema: 'default'
   };
 
-  constructor(@Inject(DOCUMENT) private _document) {
+  constructor( @Inject(DOCUMENT) private _document ) {
     this.cargarAjustes();
   }
 
@@ -34,7 +34,7 @@ export class SettingsService {
 }
 
 
-interface IAjustes {
+interface Ajustes {
   temaUrl: string;
   tema: string;
 }
